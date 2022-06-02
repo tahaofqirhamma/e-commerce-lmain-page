@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    overflow: auto;
+}
+
+// 
+//*****************Colors***************
+
+//>>>>>>>>>>>>>>>>>>Primary<<<<<<<<<<<<<<<<<<<<<<<<
+$primary1 :hsl(26, 100%, 55%);
+$primary2 :hsl(25, 100%, 94%);
+
+//>>>>>>>>>>>>>>>>>Neutral<<<<<<<<<<<<<<<<<<<<<<<<<
+
+$neutral1:hsl(200, 13%, 13%);
+$neutral2:hsl(219, 9%, 45%);
+$neutral3:hsl(220, 14%, 75%);
+$neutral4:hsl(223, 64%, 98%);
+
+//>>>>>>>>>>>>>>>>Typoghrafy<<<<<<<<<<<<<<<<
+
+@mixin  font($color, $size, $weight) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+//>>>>>>>>>>>>>>>Flex & Grid<<<<<<<<<<<<<<<<<<<<<
+
+@mixin flex($dire, $justf, $align) {
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justf;
+    align-items: $align;
+
+}
+

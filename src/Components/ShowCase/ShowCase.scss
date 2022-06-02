@@ -1,0 +1,194 @@
+@import "../../style/utilities.scss";
+
+section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    
+    .prd-imgs{
+        padding: 45px;
+        .main-img {
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .sub-imgs{
+            @include flex(row, space-between, center);
+            padding: 20px 0;
+            img {
+                width: 20%;
+                height: 20%;
+                border-radius: 10px;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.7;
+                    // border: 5px $primary1 solid;
+                }
+                // margin-right: 20px;
+            }
+        }
+    }
+
+    .prd-infos{
+        @include flex(column,space-evenly, flex-start);
+
+        .titel{
+            // margin-bottom: 150px;
+            p{
+                @include font($primary1,1rem,700);
+                word-spacing: 5px;
+                padding: 0 0 10px 0;
+            }
+
+            h1{
+                @include font($neutral1, 3rem, 700);
+                
+            }
+        }
+        
+        .prd-descr{
+            @include font($neutral2, 1rem, 400);
+            line-height: 1.7;
+            margin-top: -50px;
+        }
+
+        .price-buy{
+            margin-top: -50px;
+            
+            h1{
+               
+                span {
+                    @include font($primary1, 1rem, 500);
+                    background-color: $primary2;
+                    padding: 5px;
+                    border-radius: 10px;
+                    margin-left: 10px;
+                }
+            }
+
+            h2{
+                @include font($neutral3, 1rem, 700);
+                text-decoration: line-through;
+                padding: 10px 0;
+            }
+
+            .prd-q{
+                @include flex(row,space-evenly,center);
+
+                .quantity{
+                    @include flex(row, space-between, center);
+                    width: 150px;
+                    background-color: $neutral4;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin-right: 25px;
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+
+                .btn{
+                    @include flex(row, center, center);
+                    width: 200px;
+                    padding: 10px;
+                    cursor: pointer;
+                    background-color: $primary1;
+                    border: none;
+                    border-radius: 10px;
+                    color: $neutral4;
+                    &:hover{
+                        opacity: 0.7;
+                        box-shadow: 1px 12px 15px $primary1;
+                    }
+                    svg {
+                        margin-right: 10px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// media queries
+// mobile 415px
+
+@media screen and (max-width: 415px){
+    section{
+        min-height: 125vh;
+        background-color: #fff;
+        @include flex(column, center, center);
+        .prd-imgs {
+            padding: 0;
+            .main-img {        
+            img {
+                height: 100%;
+                width: 100%;
+                        
+                }
+            }
+            .sub-imgs{
+                display: none;
+            }
+
+            }
+            .prd-infos {
+                .titel {
+                    p{
+                        padding: 0;                 
+                    }
+                    h1{
+                        @include font($neutral1, 2rem, 700);
+                        // z-index: 1;
+                    }
+                }
+                .prd-descr {
+                    @include font($neutral2, 1.0rem, 400);
+                       margin: 10px 0 0 0;
+                    }
+
+                .price-buy {
+                    margin-top: 10px;
+    
+                    .prd-q {
+                        @include flex(column,center, center);
+                        width: 100%;
+                        .quantity {
+                            @include flex(row, space-between, center);
+                            width: 350px;
+                            background-color: $neutral4;
+                            padding: 10px;
+                            border-radius: 10px;
+                            margin:10px;
+        
+                            img {
+                                cursor: pointer;
+                            }
+                        }
+        
+                        .btn {
+                            @include flex(row, center, center);
+                            width: 350px;
+                           margin: 10px;
+        
+                            &:hover {
+                                opacity: 0.7;
+                                box-shadow: 1px 12px 15px $primary1;
+                            }
+        
+                            svg {
+                                margin-right: 10px;
+                            }
+        
+                        }
+                    }
+                }
+            }
+            }
+}      

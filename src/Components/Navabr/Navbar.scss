@@ -1,0 +1,112 @@
+@import "../../style/utilities.scss";
+
+nav {
+    @include flex(row,space-between,center);
+    border-bottom: 2px $neutral3 solid;
+    
+   
+    .n1{
+        @include flex(row, space-between, center);
+        
+        .logo {
+            @include flex(row, space-evenly, stretch);
+            h1 {
+                @include font($neutral1,2rem,700);
+            }
+            img {
+                display: none;
+            }
+        }
+
+        ul {
+            @include flex(row, center, stretch);
+            margin-left: 30px;
+            li{
+                list-style-type: none;
+                margin: 0 20px;
+                height: 100%;
+                a{
+                    text-decoration: none;
+                    color: $neutral3;
+                    padding: 0 0 27px 0;
+                &:hover{
+                    border-bottom: 4px $primary1 solid;
+                    
+                }
+                }
+            }
+        }
+    }
+
+    .n2{
+        @include flex(row,space-between,center);
+
+        .cart {
+            position: relative;
+            svg {
+                cursor: pointer;
+            }
+
+            span{
+                height: 15px;
+                width: 15px;
+                padding: 8px;
+                font-size: 12px;
+                border-radius: 50%;
+                background-color: $primary1;
+                text-align: center;
+                @include flex(row, center, center);
+                position: absolute;
+                bottom: 70%;
+                left: 50%;
+            }
+        }
+
+        img[alt="avatar"]{
+            height: 50%;
+            width: 50%;
+            border: 2px $primary1 solid;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+     
+    
+    }
+
+}
+
+
+// media queries 
+// mobile 415px 
+@media screen and (max-width: 415px){
+
+    nav{
+        @include flex(row, space-between, center);
+        // position: fixed;
+        width: 100%;
+        // background-color: $primary2;
+        .n1{
+            .logo{
+                @include flex(row ,space-between, center);
+                align-items: center;
+                img{
+                    display: block;
+                    margin: 5px 10px 0 0;
+                    cursor: pointer;
+                }
+            }
+            ul {
+            display: none;
+            }
+        }
+
+        .n2{
+            @include flex(row, space-evenly, center);
+            img[alt="avatar"] {
+                height: 30%;
+                width: 30%;
+                }
+        }
+          
+    }
+}

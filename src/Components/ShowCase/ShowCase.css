@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  overflow: auto;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+section .prd-imgs {
+  padding: 45px;
+}
+
+section .prd-imgs .main-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+section .prd-imgs .sub-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+section .prd-imgs .sub-imgs img {
+  width: 20%;
+  height: 20%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+section .prd-imgs .sub-imgs img:hover {
+  opacity: 0.7;
+}
+
+section .prd-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section .prd-infos .titel p {
+  color: #ff7d1a;
+  font-size: 1rem;
+  font-weight: 700;
+  word-spacing: 5px;
+  padding: 0 0 10px 0;
+}
+
+section .prd-infos .titel h1 {
+  color: #1d2325;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+section .prd-infos .prd-descr {
+  color: #68707d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: -50px;
+}
+
+section .prd-infos .price-buy {
+  margin-top: -50px;
+}
+
+section .prd-infos .price-buy h1 span {
+  color: #ff7d1a;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #ffede0;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+section .prd-infos .price-buy h2 {
+  color: #b6bcc8;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: line-through;
+  padding: 10px 0;
+}
+
+section .prd-infos .price-buy .prd-q {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .prd-infos .price-buy .prd-q .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  background-color: #f7f8fd;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 25px;
+}
+
+section .prd-infos .price-buy .prd-q .quantity img {
+  cursor: pointer;
+}
+
+section .prd-infos .price-buy .prd-q .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ff7d1a;
+  border: none;
+  border-radius: 10px;
+  color: #f7f8fd;
+}
+
+section .prd-infos .price-buy .prd-q .btn:hover {
+  opacity: 0.7;
+  -webkit-box-shadow: 1px 12px 15px #ff7d1a;
+          box-shadow: 1px 12px 15px #ff7d1a;
+}
+
+section .prd-infos .price-buy .prd-q .btn svg {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=ShowCase.css.map */

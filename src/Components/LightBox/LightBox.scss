@@ -1,0 +1,68 @@
+@import "../../style/utilities.scss";
+
+
+section.lightbox {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @include flex(column, center , center);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  
+    .prd-imgs{
+        position: relative;
+        opacity: 1;
+        
+        padding: 50px;
+        img[alt="close"] {
+        position: absolute;
+        right: 25%;
+        top:5%;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.5);
+        }
+
+    }
+        @include flex(column, center, center);
+        .main-img{
+            @include flex(column, center, center);
+           
+                   
+            img[alt="mi"]{
+                position: relative;
+                margin: 20px;
+                height: 40%;
+                width: 40%;
+            }
+
+            #next, #prev{
+                            @include flex(column, center, center);
+                position: absolute;
+                top: 34%;
+                height: 30px;
+                width: 30px;
+                padding: 5px;
+                border-radius: 50%;
+                background-color: $neutral4;
+                z-index: 1;
+                &:hover{
+                    transform: scale(1.1);
+                    background-color: $primary1;
+                }
+            }
+            #next{
+                left: 30%;
+            }
+            #prev{
+                right: 30%;
+            }
+        }
+        .sub-imgs{
+            img{
+                height: 20%;
+                width: 20%;
+            }
+        }
+    }
+}

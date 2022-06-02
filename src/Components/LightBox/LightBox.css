@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  overflow: auto;
+}
+
+section.lightbox {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+}
+
+section.lightbox .prd-imgs {
+  position: relative;
+  opacity: 1;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.lightbox .prd-imgs img[alt="close"] {
+  position: absolute;
+  right: 25%;
+  top: 5%;
+  cursor: pointer;
+}
+
+section.lightbox .prd-imgs img[alt="close"]:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+section.lightbox .prd-imgs .main-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.lightbox .prd-imgs .main-img img[alt="mi"] {
+  position: relative;
+  margin: 20px;
+  height: 40%;
+  width: 40%;
+}
+
+section.lightbox .prd-imgs .main-img #next, section.lightbox .prd-imgs .main-img #prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 34%;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #f7f8fd;
+  z-index: 1;
+}
+
+section.lightbox .prd-imgs .main-img #next:hover, section.lightbox .prd-imgs .main-img #prev:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #ff7d1a;
+}
+
+section.lightbox .prd-imgs .main-img #next {
+  left: 30%;
+}
+
+section.lightbox .prd-imgs .main-img #prev {
+  right: 30%;
+}
+
+section.lightbox .prd-imgs .sub-imgs img {
+  height: 20%;
+  width: 20%;
+}
+/*# sourceMappingURL=LightBox.css.map */

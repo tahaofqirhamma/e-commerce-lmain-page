@@ -1,0 +1,75 @@
+@import "../../style/utilities.scss";
+
+.checkout {
+    position: absolute;
+    border: 1px $neutral4 solid;
+    background-color: #fff;
+    box-shadow: 1px 10px 10px $neutral3;
+    border-radius: 1px;
+    padding: 20px 10px;
+    width: 30%;
+    top: 10%;
+    right: 10%;
+    z-index: 1;
+
+    .empty{
+        @include flex(row, center, center);
+        @include font($neutral3, 1rem, 400);
+        padding: 50px;
+        text-shadow: 1px 19px 15px $neutral3;
+    }
+
+    .titel {
+        border-bottom: 1px $neutral3 solid;
+        @include flex(row ,space-between, center);
+        img{
+            cursor: pointer;
+            padding: 15px;
+        }
+        h1{
+            font-size: 1.2rem;
+            margin: 0 0 5px 5px;
+            
+        }
+    }
+
+    .prd{
+        @include flex(row, space-around, center);
+        padding: 10px;
+        img[alt="cartimg"]{
+            height: 25%;
+            width: 25%;
+            padding: 5px;
+            border-radius: 16px;
+        }
+        img[alt="delete"]{
+            cursor: pointer;
+        }
+        
+        .prd-info{
+            padding: 5px;
+            p{
+                @include font($neutral3, 0.8rem, 400);
+            }
+            span.total{
+                @include font(#000, 1rem, bold);
+            }
+        }
+
+
+        .prd-info{
+            @include flex(column, center, flex-start)
+        }
+    }
+
+    button {
+
+        @include font(#fff, 1rem, bold);
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 20px;
+        background-color: $primary1;
+        cursor: pointer;
+    }
+}
