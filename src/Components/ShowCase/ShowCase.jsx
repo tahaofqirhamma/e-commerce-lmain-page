@@ -11,7 +11,6 @@ function ShowCase() {
   const [show, setShow] = useState(false);
   const [mainImg, setMainImg] = useState(data[0]);
   const [quantity, setQuantity] = useState(0);
-  const [cartItem, setCartItem] = useState(0);
 
   const openBox = () => {
     setShow(true);
@@ -36,7 +35,6 @@ function ShowCase() {
       setQuantity(0);
     }
   };
-  const c = 0;
 
   const addToCart = () => {
     alert("This option well be enable Soon !!");

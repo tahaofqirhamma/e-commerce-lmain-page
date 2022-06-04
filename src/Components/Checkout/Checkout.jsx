@@ -1,11 +1,10 @@
 import React from "react";
-import { useState } from "react";
 import "./Checkout.scss";
 import CartImg from "../../assets/images/image-product-1-thumbnail.jpg";
 import Delete from "../../assets/images/icon-delete.svg";
 import Close from "../../assets/images/icon-close.svg";
 function Checkout({ setShow }) {
-  const [isEmpty, setIsEmpty] = useState(true);
+  const isEmpty = true;
 
   return (
     <div className="checkout">

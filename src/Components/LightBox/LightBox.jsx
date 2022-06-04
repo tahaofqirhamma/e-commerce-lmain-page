@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import data from "../../data/data";
 import "./LightBox.scss";
-import mainimg1 from "../../assets/images/image-product-1.jpg";
 import Close from "../../assets/images/icon-close.svg";
 import Prev from "../../assets/images/icon-previous.svg";
 import Next from "../../assets/images/icon-next.svg";
@@ -25,13 +24,13 @@ function LightBox({ closeBox }) {
         />
         <div className="main-img">
           <img src={Prev} id="next" alt="" />
-          <img src={mainimg1} alt="mi" />
+          <img src={mainImg} alt="mi" />
           <img src={Next} id="prev" alt="" />
         </div>
 
         <div className="sub-imgs">
           {data.map((img, index) => {
-            const { id, titel, src1, src0 } = img;
+            const { id, titel, src1 } = img;
             return (
               <img
                 src={src1}

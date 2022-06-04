@@ -16,7 +16,7 @@ function Navbar() {
         </div>
         <ul className="links">
           <li>
-            <a href="#">Collection</a>
+            <a href="">Collection</a>
           </li>
           <li>
             <a href="#">Men</a>
