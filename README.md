@@ -4,7 +4,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://e-com-mainpage.netlify.app/)
+- Live Site URL: [https://e-com-mainpage.netlify.app/]()
 
 ## My process
 
