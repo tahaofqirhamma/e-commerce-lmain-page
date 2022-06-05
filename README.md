@@ -6,7 +6,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 - Live Site URL: [https://e-com-mainpage.netlify.app/]()
 
-![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
+![Design preview for the E-commerce product page coding challenge](./desktop-preview.jpg)
 
 ## My process
 
